@@ -6,22 +6,22 @@
 
 int main(){
   
-// Área para definição das variáveis para armazenar as propriedades das cidades
+  // Área para definição das variáveis para armazenar as propriedades das cidades
 
     char Estado1, Codigo_da_Carta1[20], Nome_da_Cidade1[50];
     int População1, Pontos_Turísticos1;
-    float Área1, PIB1;
+    float Área1, PIB1, Densidade1, PIBcapita1;
 
     char Estado2, Codigo_da_Carta2[20], Nome_da_Cidade2[50];
     int População2, Pontos_Turísticos2;
-    float Área2, PIB2;
+    float Área2, PIB2, Densidade2, PIBcapita2;
 
   // Área para entrada de dados
 
     printf(" Cadastro da Carta 1:\n\n");
     
     printf("Digite a letra do Estado: \n");
-    scanf("%c", &Estado1);
+    scanf(" %c", &Estado1);
 
     printf("Digite o Código da Carta: \n");
     scanf("%s", Codigo_da_Carta1);
@@ -42,6 +42,9 @@ int main(){
     scanf("%f", &PIB1);
     printf("\n");
   
+    Densidade1 = (float) População1 / Área1;
+    PIBcapita1 = (PIB1 *1000000000) / (float) População1;
+
   // Área para exibição dos dados da cidade
     
     printf("Carta 1 cadastrada com sucesso!\n\n");
@@ -52,6 +55,8 @@ int main(){
     printf("Área: %.2f km²\n", Área1);
     printf("PIB: %.2f Bilhões de reais\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turísticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade1);
+    printf("PIB per Capita: %.2f reais\n", PIBcapita1);
 
   // Área para entrada de dados
 
@@ -78,6 +83,9 @@ int main(){
     scanf("%f", &PIB2);
     printf("\n");
 
+    Densidade2 = (float) População2 / Área2;
+    PIBcapita2 = (PIB2 *1000000000) / (float) População2; 
+
   // Área para exibição dos dados da cidade
 
     printf("Carta 2 cadastrada com sucesso!\n\n");
@@ -88,6 +96,8 @@ int main(){
     printf("Área: %.2f km²\n", Área2);
     printf("PIB: %.2f Bilhões de reais\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turísticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade2);
+    printf("PIB per Capita: %.2f reais\n", PIBcapita2);
     
     return 0;
 }
