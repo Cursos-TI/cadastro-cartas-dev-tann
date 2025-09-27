@@ -114,7 +114,7 @@ int main(){
     printf("Área: %s\n", (Area1 > Area2) ? "Carta 1 vence" : (Area1 < Area2) ? "Carta 2 vence" : "Empate");
     printf("PIB: %s\n", (PIB1 > PIB2) ? "Carta 1 vence" : (PIB1 < PIB2) ? "Carta 2 vence" : "Empate");
     printf("Pontos Turísticos: %s\n", (Pontos_Turisticos1 > Pontos_Turisticos2) ? "Carta 1 vence" : (Pontos_Turisticos1 < Pontos_Turisticos2) ? "Carta 2 vence" : "Empate");
-    printf("Densidade Populacional: %s\n", (Densidade1 > Densidade2) ? "Carta 1 vence" : (Densidade1 < Densidade2) ? "Carta 2 vence" : "Empate");
+    printf("Densidade Populacional: %s\n", (Densidade1 > Densidade2) ? "Carta 2 vence" : (Densidade1 < Densidade2) ? "Carta 1 vence" : "Empate");
     printf("PIB per Capita: %s\n", (PIBcapita1 > PIBcapita2) ? "Carta 1 vence" : (PIBcapita1 < PIBcapita2) ? "Carta 2 vence" : "Empate");
     printf("Super Poder: %s\n", (Superpoder1 > Superpoder2) ? "Carta 1 vence" : (Superpoder1 < Superpoder2) ? "Carta 2 vence" : "Empate");
 
